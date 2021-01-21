@@ -11,11 +11,7 @@ public class Client {
     private String email;
     private Date birthDate;
 
-    public Client(){
-
-    }
-
-    public Client (String name, String email, Date birthDate){
+    public Client(String name, String email, Date birthDate) {
         this.name = name;
         this.email = email;
         this.birthDate = birthDate;
@@ -47,8 +43,7 @@ public class Client {
 
     @Override
     public String toString() {
-        return "Client: " + name + " - " + "(" + sdf.format(birthDate) + ")" + " - " + email;
+        return name + " (" + sdf.format(birthDate) + ") - " + email;
     }
 }
-
 
